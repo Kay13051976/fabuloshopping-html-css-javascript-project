@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* change the scale ratio to be 1rem=10px (default 1rem=16px) then convert to be % which is 62.5%(percentage of user's browser font-size setting)/*/
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container-grid {
+  display: grid;
+  grid-template-rows: 10rem 10rem 100vh 20rem;
+  max-width: 190rem;
+  font-size: 1.8rem;
+}
+.header1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2rem;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+.header1-shopping-word {
+  color: rgb(231, 100, 192);
+  background-color: #0f0f0f;
+}
+h1 {
+  font-size: 6rem;
+  padding-left: 3rem;
+  color: #fff;
+
+  /* color: rgb(231, 100, 192); */
+  /* color: greenyellow; */
+}
+
+.header1-free {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+}
+.header1-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding-right: 3rem;
+  column-gap: 4rem;
+}
+.header1-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.header1-nav a:hover {
+  color: #777;
+}
+.header2-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  column-gap: 4rem;
+}
+.header2-nav a {
+  color: #000;
+  text-decoration: none;
+}
+.header2-nav a:hover {
+  color: #999;
+}
+.homepage-main-picture {
+  background-image: url(https://cdn.pixabay.com/photo/2016/10/16/04/05/girl-1744349_1280.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homepage-summer-sale-advert {
+  font-size: 8.5rem;
+  margin-top: 15rem;
+  color: #fefaf2;
+  opacity: 0.5;
+  text-shadow: 0 0 5px #000;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "ABeeZee", sans-serif;
+  z-index: 3;
+}
+
+.newcollection-btn,
+.all-offers-btn {
+  background-color: transparent;
+  border: 2px solid #999;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 25rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.4rem 0.2rem;
+  cursor: pointer;
+  border-radius: 0.6rem;
+}
+.buttons a {
+  color: #333;
+
+  text-decoration: none;
+}
+
+.newcollection-btn a:hover,
+.all-offers-btn a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.newcollection-btn:hover,
+.all-offers-btn:hover {
+  border-color: #000;
+}
+.footer {
+  background-color: #fff;
+}
+
+.footer-content {
+  font-size: 3rem;
+  text-align: center;
+  padding-left: 25rem;
+  padding-right: 25rem;
+  line-height: 1.6;
+  font-family: "Lato", sans-serif;
+  color: #777;
+}

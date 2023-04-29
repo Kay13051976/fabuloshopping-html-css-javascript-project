@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* change the scale ratio to be 1rem=10px (default 1rem=16px) then convert to be % which is 62.5%(percentage of user's browser font-size setting)/*/
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container-grid {
+  display: grid;
+  grid-template-rows: 10rem 24rem 100vh 20rem;
+  max-width: 190rem;
+  font-size: 1.8rem;
+}
+.header1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2rem;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+.header-shopping-word {
+  color: rgb(231, 100, 192);
+  background-color: #0f0f0f;
+}
+h1 {
+  font-size: 6rem;
+  padding-left: 3rem;
+  color: #fff;
+
+  /* color: rgb(231, 100, 192); */
+  /* color: greenyellow; */
+}
+
+.header-free {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+}
+.header1-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding-right: 3rem;
+  column-gap: 4rem;
+}
+.header1-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.header1-nav a:hover {
+  color: #777;
+}
+.header2 {
+  padding-top: 4rem;
+  line-height: 30px;
+}
+
+.header2 h2 {
+  background-color: #fff;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+}
+.header2 p {
+  padding-top: 4rem;
+  font-size: 2rem;
+  color: #777;
+}
+/* style grid */
+.center {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #fff;
+}
+.cards > li {
+  border-radius: 1rem;
+  border: 2px solid navy;
+
+  overflow: hidden;
+}
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  font-size: 25px;
+}
+
+img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.frame {
+  width: 100%;
+
+  object-fit: cover;
+  overflow: hidden;
+}
+.name-price {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #0f0f0f;
+}
+ul li {
+  list-style: none;
+}
+
+.responsive-grid {
+  gap: 1rem;
+}
